@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: quake
+      run: quake-kube
   replicas: 1
   template:
     metadata:
       labels:
-        run: quake
+        run: quake-kube
       annotations:
         prometheus.io/scrape: 'true'
         prometheus.io/port: '8080'
